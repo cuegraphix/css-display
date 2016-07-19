@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/display.css" />
+</head>
+<body>
+<article>
+  <h1>CSS display property</h1>
+  <section>
+    <h2>Basic values (CSS 1)</h2>
+    <h3>指定なし</h3>
+    <p>そのころわたくしは、モリーオ市の博物局に勤めて居りました。（中略）あの<strong>イーハトーヴォ</strong>のすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+    <h3>display: none;</h3>
+    <p>そのころわたくしは、モリーオ市の博物局に勤めて居りました。（中略）あの<span class="none">イーハトーヴォ</span>のすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+    <h3>display: inline;</h3>
+    <p>そのころわたくしは、モリーオ市の博物局に勤めて居りました。（中略）あの<span class="inline highlight">イーハトーヴォ</span>のすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+    <h3>display: block;</h3>
+    <p>そのころわたくしは、モリーオ市の博物局に勤めて居りました。（中略）あの<span class="block highlight">イーハトーヴォ</span>のすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+    <h3>display: list-item;</h3>
+    <p>そのころわたくしは、モリーオ市の博物局に勤めて居りました。（中略）<span class="list-item">あのイーハトーヴォのすきとおった風、</span><span class="list-item">夏でも底に冷たさをもつ青いそら、</span><span class="list-item">郊外のぎらぎらひかる草の波。</span></p>
+  </section>
+  <section>
+    <h2>Extended values (CSS 2.1)</h2>
+    <h3>display: inline-block;</h3>
+    <p>そのころわたくしは、モリーオ市の博物局に勤めて居りました。（中略）あの<span class="inline-block highlight">イーハトーヴォ</span>のすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+  </section>
+  <section>
+    <h2>Table model values (CSS 2.1)</h2>
+    <h3>display: table; display: table-*;</h3>
+    <span class="table">
+      <span class="table-caption">User table</span>
+      <span class="table-header-group">
+        <span class="table-row">
+          <span class="table-cell">Firstname</span>
+          <span class="table-cell">Lastname</span>
+          <span class="table-cell">Email</span>
+        </span>
+      </span>
+      <span class="table-row-group">
+        <span class="table-row">
+          <span class="table-cell">John</span>
+          <span class="table-cell">Doe</span>
+          <span class="table-cell">john@example.com</span>
+        </span>
+        <span class="table-row">
+          <span class="table-cell">Mary</span>
+          <span class="table-cell">Moe</span>
+          <span class="table-cell">mary@example.com</span>
+        </span>
+        <span class="table-row">
+          <span class="table-cell">July</span>
+          <span class="table-cell">Dooley</span>
+          <span class="table-cell">july@example.com<br>d_july@example.com</span>
+        </span>
+      </span>
+      <span class="table-footer-group">
+        <span class="table-row">
+          <span class="table-cell">Footer</span>
+          <span class="table-cell">Footer</span>
+          <span class="table-cell">Footer</span>
+        </span>
+      </span>
+    </span>
+    <h3>display: inline-table;</h3>
+    <span>TOMの男女比は</span>
+    <span class="inline-table">
+      <span class="table-header-group">
+        <span class="table-row">
+          <span class="table-cell"></span>
+          <span class="table-cell">数</span>
+        </span>
+      </span>
+      <span class="table-row-group">
+        <span class="table-row">
+          <span class="table-cell">男性</span>
+          <span class="table-cell">32</span>
+        </span>
+        <span class="table-row">
+          <span class="table-cell">女性</span>
+          <span class="table-cell">28</span>
+        </span>
+        <span class="table-row">
+          <span class="table-cell">不明</span>
+          <span class="table-cell">3</span>
+        </span>
+      </span>
+    </span>
+    <small>※ 実際の数字とは異なります</small>
+  </section>
+  <section>
+    <h2>Flexbox model values</h2>
+    <h3>row</h3>
+    <div class="flex">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h3>column</h3>
+    <div class="flex column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <h3>row-reverse</h3>
+    <div class="flex row-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </section>
+  <section>
+    <h2>Grid box model values</h2>
+    <h3>Basic</h3>
+    <div class="grid">
+      <div class="header">Header</div>
+      <div class="aside">Aside</div>
+      <div class="article">Article</div>
+      <div class="footer">Footer</div>
+    </div>
+  </section>
+</article>
+</body>
+</html>
