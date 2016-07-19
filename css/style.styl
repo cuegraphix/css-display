@@ -1,0 +1,662 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html
+  font-family: sans-serif // 1
+  -ms-text-size-adjust: 100% // 2
+  -webkit-text-size-adjust: 100% // 2
+
+/**
+ * Remove default margin.
+ */
+
+body
+  margin: 0
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary
+  display: block
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video
+  display: inline-block // 1
+  vertical-align: baseline // 2
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls])
+  display: none
+  height: 0
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template
+  display: none
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background color from active links in IE 10.
+ * 2. Improve readability of focused elements when they are also in
+ *    an active/hover state.
+ */
+
+a
+  background-color: transparent // 1
+  &:active,
+  &:hover
+    outline: 0 // 2
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title]
+  border-bottom: 1px dotted
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong
+  font-weight: bold
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn
+  font-style: italic
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark
+  background: #ff0
+  color: #000
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small
+  font-size: 80%
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img
+  border: 0
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root)
+  overflow: hidden
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure
+  margin: 1em 40px
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr
+  box-sizing: content-box
+  height: 0
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre
+  overflow: auto
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp
+  font-family: monospace, monospace
+  font-size: 1em
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea
+  color: inherit // 1
+  font: inherit // 2
+  margin: 0 // 3
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button
+  overflow: visible
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select
+  text-transform: none
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], // 1
+input[type="reset"],
+input[type="submit"]
+  -webkit-appearance: button // 2
+  cursor: pointer // 3
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled]
+  cursor: default
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner
+  border: 0
+  padding: 0
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input
+  line-height: normal
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"]
+  box-sizing: border-box // 1
+  padding: 0 // 2
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button
+  height: auto
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"]
+  -webkit-appearance: textfield // 1
+  box-sizing: content-box // 2
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+  -webkit-appearance: none
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset
+  border: 1px solid #c0c0c0
+  margin: 0 2px
+  padding: 0.35em 0.625em 0.75em
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend
+  border: 0 // 1
+  padding: 0 // 2
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea
+  overflow: auto
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup
+  font-weight: bold
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td,
+th
+  padding: 0
+
+
+//
+// Global style
+// ----------------------
+BODY_BACKGROUND_COLOR = #fafafa
+TEXT_COLOR = #202020
+
+// LINK_COLOR = #0097a7
+LINK_COLOR = #1c74d1
+//LINK_HOVER_COLOR = #26c6da
+LINK_HOVER_COLOR = #56b6ea
+LINK_HOVER_DECARATION = none
+
+LINK_LOW_PRIORITY_COLOR = #bdbdbd
+LINK_LOW_PRIORITY_HOVER_COLOR = #bdbdbd
+
+//
+// Basic Colors
+// ----------------------
+COLOR_TEXT_MUTED = #888
+
+// TODO: 汎用的なカラー あとで考える
+COLOR_GRAY_BASE = #000
+COLOR_GRAY_DARKER = #222
+COLOR_GRAY_DARK = #333
+COLOR_GRAY = #555
+COLOR_GRAY_LIGHT = #777
+COLOR_GRAY_LIGHTER = #f8f8f8
+COLOR_WHITE = #fff
+
+COLOR_TOM_BLUE = #00a2e6
+COLOR_TOM_RED = #e30920
+COLOR_TOM_GREEN = #91c231
+COLOR_TOM_YELLOW = #fccf00
+
+// Form Colors
+COLOR_SUBMIT = #039be5
+
+// 線
+BORDER_COLOR = #d0d0d0
+HR_COLOR = BORDER_COLOR
+
+// テキスト
+COLOR_TEXT_BLACK = TEXT_COLOR
+COLOR_TEXT_WHITE = #ffffff
+COLOR_SUB_TEXT = #7a7a7a
+
+
+// Social Media colors
+COLOR_FACEBOOK   = #3b5998
+COLOR_TWITTER    = #55ACEE
+COLOR_TUMBLR     = #36465D
+COLOR_PINTEREST  = #CC2127
+COLOR_YOUTUBE    = #cd201f
+COLOR_GOOGLEPLUS = #cc3732
+COLOR_INSTAGRAM  = #665047
+COLOR_WEIBO      = #d93840
+COLOR_REDDIT     = #ff5700
+
+
+// Japanese Traditional Colors
+COLOR_SHIRONEZU = #dcdddd // 白鼠 - Default Background color
+COLOR_CYAN500 = #00bcd4 // Cyan 500 - Primary Background color
+COLOR_NEZUIRO = #949495 // 鼠色 - Secondary Background color
+COLOR_WAKABAIRO = #c3d825 // 若葉色 - Success Background color
+COLOR_SORAIRO = #a0d8ef // 空色 - Info Background color
+COLOR_YAMABUKIIRO = #f8b500 // 山吹色 - Warning Background color
+COLOR_KOKIHI = #c9171e // 深緋 - Danger Background color
+COLOR_KURO = #2b2b2b // 黒 - Naught Background color
+COLOR_MIKANIRO = #f08300 // 蜜柑色 - Action / Cart button color
+
+COLOR_USUAI = #0094c8 // 薄藍 - Form Focus/Active color
+
+COLOR_HIWAMOEGI = #82ae46 // 鶸萌黄 - 暖色ではない強調文字色に使用
+
+//-- 角丸
+BORDER_RADIUS_BASE = 2px
+BORDER_RADIUS_EDGELESS = 4px
+BORDER_RADIUS_ROUND = 1000px
+BORDER_RADIUS_CIRCLE = 50%
+
+
+//
+// Typography
+// ----------------------
+FONT_FAMILY_BASE = 'Lato', 'Avenir Next', Avenir, Helvetica, Arial, sans_serif
+
+FONT_FAMILY_JA = 'Lato', 'Avenir Next', Avenir, Helvetica, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", YuGothic, "游ゴシック", Meiryo, 'メイリオ', sans-serif
+HEADING_FONT_FAMILY_JA = FONT_FAMILY_JA
+
+FONT_FAMILY_ZH-CN = 'Lato', Helvetica, '微軟雅黒', '宋体', 'Simhei','MS UI Gothic','Hei', sans-serif
+HEADING_FONT_FAMILY_ZH-CN = FONT_FAMILY_ZH-CN
+
+FONT_FAMILY_ZH-TW = 'Lato', Helvetica, '微軟正黑體', 'PMingLiU', 'Apple LiSung', sans-serif
+HEADING_FONT_FAMILY_ZH-TW = FONT_FAMILY_ZH-TW
+
+
+// Font size
+// HTML の font-size が 10px を基準とする
+FONT_SIZE_BASE = 1.4rem
+FONT_SIZE_XXLARGE = 3.0rem // 30px
+FONT_SIZE_XLARGE = 2.1rem // 24px
+FONT_SIZE_LARGE = 1.8rem // 18px
+FONT_SIZE_SMALL = 1.2rem // 12px
+FONT_SIZE_XSMALL = 1.0rem // 10px
+
+FONT_SIZE_H1 = 3.6rem
+FONT_SIZE_H2 = 3.0rem
+FONT_SIZE_H3 = 2.4rem
+FONT_SIZE_H4 = 2.1rem
+FONT_SIZE_H5 = 1.8rem
+FONT_SIZE_H6 = 1.6rem
+
+LINE_HEIGHT_BASE = 1.428571429 // 20/14
+
+FONT_WEIGHT_LIGHT = 100
+FONT_WEIGHT_NORMAL = 400
+FONT_WEIGHT_BOLD = 700
+
+HEADING_FONT_FAMILY = inherit
+HEADING_FONT_WEIGHT = FONT_WEIGHT_NORMAL
+HEADING_LINE_HEIGHT = 1.11
+HEADING_COLOR = inherit
+
+//
+// Grid Variables
+// ----------------------
+GRID_COLUMNS = 12
+GRID_GUTTER_WIDTH = 3.0rem
+GRID_CONTAINER_MIN_WIDTH = 960px
+GRID_CONTAINER_MAX_WIDTH = 1320px
+
+DOCUMENT_MAX_WIDTH = 96rem
+
+
+// Mixins
+get-height-line(line = 1.0)
+  unit(floor((FONT_SIZE_BASE * 10 * LINE_HEIGHT_BASE) * line), px)
+
+// Font
+//
+// Lato Google Font
+
+ @import url('//fonts.googleapis.com/css?family=Lato:100,400,700');
+
+
+html
+  box-sizing border-box
+
+*, *:before, *:after
+  box-sizing inherit
+
+html
+  font-size 62.5% // 10px
+
+body
+  font-family FONT_FAMILY_BASE
+  font-size FONT_SIZE_BASE
+  line-height LINE_HEIGHT_BASE
+  color TEXT_COLOR
+  background-color BODY_BACKGROUND_COLOR
+
+a
+  color LINK_COLOR
+  text-decoration none
+
+  -webkit-tap-highlight-color transparent
+
+  &:hover,
+  &:focus
+    color LINK_HOVER_COLOR
+    text-decoration LINK_HOVER_DECARATION
+
+  &:focus
+    outline thin dotted // Default
+    outline 5px auto -webkit-focus-ring-color // WebKit
+    outline-offset -2px
+
+/*
+figure
+  margin 0
+*/
+
+img
+  vertical-align middle
+
+.img-responsive
+  display block
+  max-width 100%
+  height auto
+
+
+// Hard rules
+//
+// Style guide: base.hr
+hr
+  margin-top get-height-line()
+  margin-bottom get-height-line()
+  border 0
+  border-top 1px solid HR_COLOR
+
+
+.clearfix
+.cf // TODO: .cf depulicated
+  clearfix()
+
+
+// Include normalize.css
+// ------------------------------------------------------------
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button
+html input[type="button"] /* 1 */
+input[type="reset"]
+input[type="submit"]
+  -webkit-appearance button; /* 2 */
+  cursor pointer; /* 3 */
+
+// Docs
+// ------------------------------------------------------------
+
+h1, .h1
+h2, .h2
+h3, .h3
+  margin-top get-height-line(1)
+  margin-bottom get-height-line(.5)
+
+h4, .h4
+h5, .h5
+h6, .h6
+  margin-top get-height-line(.5)
+  margin-bottom get-height-line(.5)
+
+h1, .h1
+  padding-bottom get-height-line(.5)
+  border-bottom 4px solid BORDER_COLOR
+
+h2, .h2
+  padding-bottom get-height-line(.5)
+  border-bottom 1px solid BORDER_COLOR
+
+p
+  margin-bottom 1em
+
+p+dl, p+ul, p+ol, p+p, p+pre,
+ul+dl, ul+ul, ul+ol, ul+p, ul+pre,
+ol+dl, ol+ul, ol+ol, ol+p, ol+pre,
+pre+dl, pre+ul, pre+ol, pre+p, pre+pre,
+figure+dl, figure+ul, figure+ol, figure+p, figure+pre
+  margin-top 1em
+
+ul:not([class^="list--"]):not([class*=" list--"])
+  padding-left 1.5em
+  list-style disc
+
+ol:not([class^="list--"]):not([class*=" list--"])
+  padding-left 1.5em
+  list-style decimal
+
+article
+  max-width 780px
+  margin 0 auto 80px
+  font-size 16px
+  line-height 1.6
+  padding-left 15px
+  padding-right 15px
+
+section
+  margin-top 8rem
+  &:first-child
+    margin-top 0
+
+.highlight
+  background-color yellowgreen
